@@ -1,24 +1,51 @@
-
-// var operadores=["+","-","*","/"];
-
 function mostrar(valor){
 var input = document.getElementById('operaciones');
 input.value += valor;
 }
 
 function limpiar() {
-var borrar = document.getElementById('operaciones');
- borrar.value = "";
+var borrarOperaciones = document.getElementById('operaciones');
+var borrarResultado = document.getElementById('resultado');
+ borrarOperaciones.value = "";
+ borrarResultado.value ="";
  }
 
    function almacenar(){
      var numeros =document.getElementById("operaciones").value;
      var respuesta = document.getElementById('resultado');
      var almacen = numeros.split("+");
-     var suma= Number(almacen[0]) + Number(almacen [1]);
+     var suma= Number(almacen [0]) + Number(almacen [1]);
      respuesta.value = suma;
 
-        //  case resta:
+    //  var operadores =["+","-","*","/"];
+    //  longitud = operadores.length;
+     //
+    //  for(var i=0; i == longitud;i++){
+    //     if(longitud[i]== "+"){
+    //       var almacen = numeros.split("+");
+    //     }
+    //     else if (longitud[i]== "-") {
+    //       var almacen = numeros.split("-");
+     //
+    //     }
+    //     else if (longitud[i]== "*") {
+    //     var almacen = numeros.split("*");
+     //
+    //     }
+    //     else if (longitud[i]== "/") {
+    //       var almacen = numeros.split("/");
+     //
+    //
+     }
+
+
+    //  var almacen = numeros.split("+");
+    //  var num1=almacen[0];
+    //  var num2=almacen [1];
+    //  var suma= Number(num1) + Number(num2);
+    //  respuesta.value = suma;
+
+
         //  var numeros =document.getElementById("operaciones").value;
         //  var respuesta = document.getElementById('resultado');
         // var almacen = numeros.split("-");
@@ -33,7 +60,7 @@ var borrar = document.getElementById('operaciones');
 
    // aqui planeaba poner la variable de operaciones para que agregara el simbolo correspondiente ;s
    //almacen.push("+");
-  }
+
 
  /*function operaciones(){
 
